@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script|Roboto+Slab&display=swap" rel="stylesheet">
     <title>My first site</title>
 </head>
 <body>
-<header> 
-	<img src="https://res.cloudinary.com/prewsh/image/upload/v1566664532/portfolioimg_gdv92c.jpg" alt="" height="250" width="200">
-	<h1>NGWUBE PRECIOUS NZUBE</h1>
-	<p> 
-			22a Adebola ojomu Street Surulere Lagos State. <br> 
-			Phone Number: +23481 6156 5745 <br>
-			Email: Pngwube@gmail.com <br>
-	</p>
+<header class="header" > 
+
+		<nav class="navbar">
+				<h2>Mr Prewsh</h2> 
+				
+				<div class="spacer"></div>
+				
+				<ul>
+					<li> <a href="#"> Home </a> </li>
+					<li> <a href="#profile"> Profile </a> </li>
+					<li> <a href="#qualification"> Qualification  </a></li>
+					<li> <a href="#certification"> Certification </a> </li>
+					<li> <a href="#footer"> Contact </a> </li>
+				</ul>
+		</nav> 
+
+		<div class="imgdetails">
+
+			<img src="https://res.cloudinary.com/prewsh/image/upload/v1566664532/portfolioimg_gdv92c.jpg" alt="" height="250" width="200">
+			<h1>NGWUBE PRECIOUS NZUBE</h1>
+			<p> 
+					<i class="fa fa-phone"></i> 08161565745 
+			</p>
+		</div>
 </header>
 
-<hr>
-
-<section>
-	<article>
+<section class="body">
+	<article id="profile">
 		<h2>PROFILE</h2>
 		<p>Ngwube Precious is result-driven with tech savvy and entrepreneurial mindset of working with limited supervision as well as part of a diverse team. Great passion for Engineering, Technology and software development. Adept at managing Projects and Social Media Platforms with few years of working as a Volunteer. Currently studying Mechatronics Engineering. He has great communication skills and is willing to put into practice Knowledge and Experience, developing skills and talents ultimately benefitting the operation of the organization he work for.</p>
 		<ul>
@@ -28,24 +45,24 @@
 			<li>Available for immediate start without legal / employment restrictions</li>
 			<li>Able / willing to work  in & from any part of Nigeria and outside the country</li>
 		</ul>
+
+
+		<table>
+			<th>
+				<h1>Personal Bio data</h1>
+			</th>
+			<tr> <td>Gender: </td> <td>Male</td> </tr>
+			<tr><td>Date of Birth:</td> <td>6th January 1997</td></tr>
+			<tr><td>Marital Status:</td> <td>Single</td></tr>
+			<tr><td>State of Origin:</td> <td>Anambra State</td></tr>
+			<tr><td>Local Govt.of Origin:</td> <td>Nnewi North </td></tr>
+			<tr><td>Nationality:</td> <td>Nigeria</td></tr>
+			<tr><td>Language:</td> <td>English/ Igbo</td></tr>
+		</table>
+
 	</article>
-
-	<hr>
-
-	<table>
-		<th>
-			<h1>Personal Bio data</h1>
-		</th>
-		<tr> <td>Gender: </td> <td>Male</td> </tr>
-		<tr><td>Date of Birth:</td> <td>6th January 1997</td></tr>
-		<tr><td>Marital Status:</td> <td>Single</td></tr>
-		<tr><td>State of Origin:</td> <td>Anambra State</td></tr>
-		<tr><td>Local Govt.of Origin:</td> <td>Nnewi North </td></tr>
-		<tr><td>Nationality:</td> <td>Nigeria</td></tr>
-		<tr><td>Language:</td> <td>English/ Igbo</td></tr>
-	</table>
-
-	<article >
+	<hr> 
+	<article id="qualification">
 		<h2>KEY SKILLS AND COMPETENCIES</h2>
 		<ul>
 			<li>Social media Content Creation.</li>
@@ -54,12 +71,9 @@
 			<li>Understanding of the work of a Mechatronics Engineer, Sales personnel, Social Media Manager, Computer Operator, Digital Marketing Manager, Content Writer, Customer relations, Business analyst and public relations.</li>
 			<li>Ability to multi task and analytical skills.</li>
 			<li>Ability to understand complex Engineering concepts</li>
+			<li> Proficiency in HTML & CSS </li>
 		</ul>
-	</article>
 
-	<hr>
-
-	<article>
 		<h1> <strong> EMPLOYEMENT HISTORY </strong> </h1>
 
 		<!-- The ul inside the em tag is just for decoration nothing much it helped in pushing the text inside on the browser -->
@@ -77,7 +91,10 @@
 		<h4>
 			<em>  <ul>VOLUNTEER GRAPHICS DESIGNER Kachem Young Initiative, (April 21, 2019) </ul>  </em>
 		</h4>
+
 	</article>
+	<hr>
+<article id="certification" >		
 
 	<table>
 			<tr> 
@@ -102,16 +119,15 @@
 		</tr>
 	</table>
 
-	<article >
+
 			<h3>PROJECTS/ ACHIEVEMENT AWARDS</h3>
 			<ul>
 				<li>Part of a thriving youth initiative project tagged "Ikwo Reads". The voluntary organization provided writing materials to secondary school students in ikwo community</li>
 				<li>Awarded the best student of the year  in Vera computers Nnewi Anambra State 2015</li>
 				<li>Recieved Google scholarship to learn Andriod Programmimg  2017</li>
 			</ul>
-	</article>
 
- 	<article>
+
 			<h3>CAREER & PERSONAL TRAINING AND DEVELOPMENT</h3>
 			<ul>
 				<li>YALI Network Online Certificate Course on Agripreneurship</li>
@@ -119,21 +135,21 @@
 				<li>Computer Programming Skills.</li>
 				<li>Creative Writing and Social  Media Content Management.</li>
 			</ul>
- 	</article>
 
-
-
+	</article>
 </section>
 
-<footer> 
-	<nav>
-		<h3>Social Media</h3>
-		<ul>
-			<li> <a href="#"> facebook </a> </li>
-			<li> <a href="#"> twitter  </a></li>
-			<li> <a href="#"> instagram </a> </li>
-		</ul>
-	</nav> 
-</footer>
+			<footer class="footer" id="footer"> 
+				<nav>
+					<ul>
+						<li> <a href="https://www.facebook.com/Mstincredible"> <i class="fa fa-facebook"></i> </a> </li>
+						<li> <a href="https://www.instagram.com/mrprewsh/"> <i class="fa fa-instagram"></i>  </a></li>
+						<li> <a href="https://twitter.com/MrPrewsh"> <i class="fa fa-twitter"></i> </a> </li>
+						<li> <a href="https://github.com/prewsh"> <i class="fa fa-github"></i> </a> </li>
+						<li> <a href="#"> <i class="fa fa-envelope"></i> </a> </li>
+					</ul>
+				</nav> 
+
+			</footer>
 </body>
 </html>
