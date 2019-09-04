@@ -146,10 +146,39 @@
 						<li> <a href="https://www.instagram.com/mrprewsh/"> <i class="fa fa-instagram"></i>  </a></li>
 						<li> <a href="https://twitter.com/MrPrewsh"> <i class="fa fa-twitter"></i> </a> </li>
 						<li> <a href="https://github.com/prewsh"> <i class="fa fa-github"></i> </a> </li>
-						<li> <a href="#"> <i class="fa fa-envelope"></i> </a> </li>
 					</ul>
 				</nav> 
 
 			</footer>
+
+			<!-- contact modal -->
+
+	<div class="hire"> <button id="myBtn"> Hire </button> </div>
+
+	<div id="myModal">
+	<span class="close">&times;</span>
+	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+		<div class="row">
+		<label class="required" for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" minlength="4" /><br />
+		<span id="name_validation" class="error_message"></span>
+		</div>
+  <div class="row">
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error_message"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" class="input" name="message" rows="7" cols="30" minlength="20"></textarea><br />
+    <span id="message_validation" class="error_message"></span>
+  </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+	</div>
+
+	<script src="./javascript.js"></script>
+
 </body>
 </html>
